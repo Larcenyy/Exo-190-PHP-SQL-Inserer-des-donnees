@@ -5,11 +5,12 @@
  * Vous utiliserez également les deux tables que vous aviez créées au point 2 ( créer des tables avec PHP )
  */
 
-try {
-    /**
-     * Créez ici votre objet de connection PDO, et utilisez à chaque fois le même objet $pdo ici.
-     */
-    $pdo = new P...;
+
+// J'ai tout mit dans la classe
+
+require "DbPDO.php";
+DbPDO::connect();
+
 
     /**
      * 1. Insérez un nouvel utilisateur dans la table utilisateur.
@@ -46,5 +47,3 @@ try {
     /**
      * 6. A l'aide des méthodes beginTransaction, commit et rollBack, insérez trois nouveaux produits dans la table produit.
      */
-}
-catch (...)
